@@ -1,9 +1,11 @@
 import styled from "styled-components/native";
 import { MaterialIcons as Icon } from "@expo/vector-icons";
+import { Platform } from "react-native";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: #f5f6fa;
+  padding-top: ${Platform.OS === "android" ? 32 : 0}px;
 `;
 
 export const Form = styled.View`
@@ -14,6 +16,7 @@ export const Form = styled.View`
 
 export const Input = styled.TextInput.attrs({
   placeholder: "Type username",
+  placeholderTextColor: "#636e72",
   autoCapitalize: "none",
   autoCorrect: false,
   autoCompleteType: "off"
@@ -23,7 +26,7 @@ export const Input = styled.TextInput.attrs({
   border-width: 1px;
   border-color: #dcdde1;
   background-color: #dcdde1;
-  color: #353b48;
+  color: #2d3436;
   border-radius: 6px;
   padding: 0 12px;
   font-size: 16px;

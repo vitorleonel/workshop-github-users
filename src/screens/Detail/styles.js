@@ -1,9 +1,10 @@
 import styled from "styled-components/native";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: #f5f6fa;
+  padding-top: ${Platform.OS === "android" ? 32 : 0}px;
 `;
 
 export const BackButton = styled.TouchableOpacity.attrs({

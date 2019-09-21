@@ -94,8 +94,6 @@ function Users(props) {
 
   return (
     <Container>
-      <StatusBar barStyle="dark-content" />
-
       <Form>
         <Input
           value={username}
