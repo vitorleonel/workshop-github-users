@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { AsyncStorage, Alert, StatusBar } from "react-native";
+import { AsyncStorage, Alert } from "react-native";
 import axios from "axios";
 import Toast from "react-native-easy-toast";
 
