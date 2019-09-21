@@ -11,7 +11,10 @@ export default createAppContainer(
       Detail
     },
     {
-      initialRouteName: "Users"
+      initialRouteName: "Users",
+      defaultNavigationOptions: {
+        header: null
+      }
     }
   )
 );

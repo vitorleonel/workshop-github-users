@@ -85,7 +85,7 @@ function Users(props) {
         <UserAvatar source={{ uri: item.avatar_url }} />
 
         <UserContent>
-          <UserName>{item.login}</UserName>
+          <UserName>@{item.login}</UserName>
           <UserBio>{item.bio || "Don't have informations..."}</UserBio>
         </UserContent>
       </User>
@@ -97,7 +97,11 @@ function Users(props) {
       <StatusBar barStyle="dark-content" />
 
       <Form>
-        <Input value={username} onChangeText={setUsername} />
+        <Input
+          value={username}
+          onChangeText={setUsername}
+          onSubmitEditing={addHadler}
+        />
 
         <Button onPress={addHadler}>
           {loading ? <ButtonLoading /> : <ButtonIcon />}
@@ -114,9 +118,5 @@ function Users(props) {
     </Container>
   );
 }
-
-Users.navigationOptions = {
-  header: null
-};
 
 export default Users;

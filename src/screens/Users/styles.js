@@ -22,7 +22,8 @@ export const Input = styled.TextInput.attrs({
   height: 44px;
   border-width: 1px;
   border-color: #dcdde1;
-  background-color: #f5f6fa;
+  background-color: #dcdde1;
+  color: #353b48;
   border-radius: 6px;
   padding: 0 12px;
   font-size: 16px;
@@ -64,9 +65,9 @@ export const User = styled.TouchableOpacity.attrs({
 `;
 
 export const UserAvatar = styled.Image`
-  width: 56px;
-  height: 56px;
-  border-radius: 28px;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
 `;
 
 export const UserContent = styled.View`
@@ -75,7 +76,7 @@ export const UserContent = styled.View`
 `;
 
 export const UserName = styled.Text`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
 `;
@@ -83,6 +84,6 @@ export const UserName = styled.Text`
 export const UserBio = styled.Text.attrs({
   numberOfLines: 2
 })`
-  font-size: 14px;
+  font-size: 16px;
   color: #636e72;
 `;
