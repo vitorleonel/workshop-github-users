@@ -52,11 +52,12 @@ export const UserName = styled.Text`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
+  color: #2d3436;
 `;
 
 export const UserBio = styled.Text`
   font-size: 16px;
-  color: #636e72;
+  color: #2d3436;
 `;
 
 export const List = styled.FlatList.attrs({
@@ -73,9 +74,10 @@ export const ItemTitle = styled.Text`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
+  color: #2d3436;
 `;
 
 export const ItemLink = styled.Text`
   font-size: 16px;
-  color: #636e72;
+  color: #2d3436;
 `;

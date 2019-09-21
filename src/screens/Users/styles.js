@@ -82,11 +82,12 @@ export const UserName = styled.Text`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
+  color: #2d3436;
 `;
 
 export const UserBio = styled.Text.attrs({
   numberOfLines: 2
 })`
   font-size: 16px;
-  color: #636e72;
+  color: #2d3436;
 `;
