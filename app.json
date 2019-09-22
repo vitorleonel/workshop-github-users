@@ -25,7 +25,8 @@
       "package": "com.vitorleonel.githubapp"
     },
     "androidStatusBar": {
-      "barStyle": "dark-content"
+      "barStyle": "dark-content",
+      "backgroundColor": "#f5f6fa"
     }
   }
 }
